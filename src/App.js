@@ -18,6 +18,15 @@ function App() {
   // HTML rendered here
   return (
     <div className="container-fluid">
+      <Welcome />
+    </div>
+  );
+}
+ 
+export default App;
+
+/*
+
         <h1>Hello World</h1>
         <p>
           This is the frontpage of your app.
@@ -25,8 +34,5 @@ function App() {
         <p>
           New here? <a href="/signup">Click here to sign up!</a> Returning users can <a href="/login">login here!</a>
         </p>
-    </div>
-  );
-}
- 
-export default App;
+
+*/
