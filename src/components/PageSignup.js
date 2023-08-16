@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { signUp } from "firebase_setup/firebase";
-const Signup = () => {
+const PageSignup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, seterror] = useState("");
@@ -49,4 +49,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default PageSignup;

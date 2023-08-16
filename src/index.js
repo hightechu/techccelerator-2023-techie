@@ -7,11 +7,11 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 
 // components imports
-import Login from "./components/Login";
-import Signup from "./components/Signup";
-import UserHome from "./components/UserHome";
+import Login from "./components/PageLogin";
+import Signup from "./components/PageSignup";
+import UserHome from "./components/PageHome";
 import Navigation from "./components/Navigation";
-import About from "./components/About";
+import About from "./components/PageAbout";
 import App from './App';
 import AddDataSample from './components/AddDataSample';
 
@@ -20,13 +20,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-        < Navigation />
         <Routes>
             <Route exact path='/' element={<App/>}/>
-            <Route exact path='/home' element={<UserHome/>}/>
-            <Route path='/login' element={<Login/>}/>
-            <Route path='/signup' element={<Signup/>}/>
-            <Route path='/about' element={<About/>}/>
+            <Route exact path='/home' element={<PageHome/>}/>
+            <Route path='/login' element={<PageLogin/>}/>
+            <Route path='/signup' element={<PageSignup/>}/>
+            <Route path='/about' element={<PageAbout/>}/>
             <Route path='/adddatasample' element={<AddDataSample/>}/>
         </Routes>
     </BrowserRouter>
