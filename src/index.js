@@ -10,10 +10,11 @@ import './index.css';
 import PageLogin from "./components/PageLogin";
 import PageSignup from "./components/PageSignup";
 import PageHome from "./components/PageHome";
-import Navigation from "./components/Navigation";
 import PageAbout from "./components/PageAbout";
+import PageSettings from "./components/PageSettings";
 import App from './App';
 import AddDataSample from './components/AddDataSample';
+import Navigation from "./components/Navigation";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // Add routes after line 30

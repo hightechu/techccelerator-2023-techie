@@ -9,7 +9,7 @@ const Navigation = () => {
             <Navbar.Collapse id="navbarScroll">
                 <Nav>
                     <NavLink className="nav-btn" eventKey="1" as={Link} to="/">My Awesome App</NavLink>
-                    <NavLink className="nav-btn" eventKey="3" as={Link} to="/about">About</NavLink>
+                    <NavLink className="nav-btn" eventKey="3" as={Link} to="/settings">Settings</NavLink>
                 </Nav>
             </Navbar.Collapse>     
         </Navbar>
