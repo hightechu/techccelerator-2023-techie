@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { signUp } from "firebase_setup/firebase";
+import BackButtonWelcome from "./BackButtonWelcome";
+
 const PageSignup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -19,6 +21,7 @@ const PageSignup = () => {
     <> 
 
       <div className="container-fluid">
+        <BackButtonWelcome />
         <h2>Sign Up</h2>
         {error ? <div>{error}</div> : null}
         <form onSubmit={handleSubmit}>
