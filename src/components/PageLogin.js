@@ -20,29 +20,30 @@ const PageLogin = () => {
   return (
     <>
       <div className="container-fluid">
-       
-              <h1>Login</h1>
               {error ? <div>{error}</div> : null}
               <form onSubmit={handleSubmit}>
-                <input
-                  type="text"
-                  name="email"
-                  value={email}
-                  placeholder="Email"
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-                <input
-                  type="password"
-                  name="password"
-                  value={password}
-                  placeholder="Password"
-                  onChange={(e) => setPassword(e.target.value)}
-                />
-                <input type="submit" value="submit" />
+                <div className="vstack gap-2 col-md-5 mx-auto">
+                <h1 className="loginTitle">Login</h1>
+                    <input
+                      type="text"
+                      name="email"
+                      value={email}
+                      placeholder="Email"
+                      onChange={(e) => setEmail(e.target.value)}
+                    />
+                    <input
+                      type="password"
+                      name="password"
+                      value={password}
+                      placeholder="Password"
+                      onChange={(e) => setPassword(e.target.value)}
+                    />
+                    <input type="submit" value="submit" />
+                </div>
               </form>
               <br>
               </br>
-              <p>
+              <p className="loginTitle">
                 New? <a href="/signup">Sign up here!</a>
               </p>
         
