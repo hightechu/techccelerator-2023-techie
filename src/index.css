@@ -21,8 +21,11 @@ code {
 }
 
 .aboutTitle {
-  text-align: center;
   font-size: 64px;
+}
+
+.aboutTitle, .loginTitle, .signupTitle {
+  text-align: center;
 }
 
 .container {
@@ -37,4 +40,10 @@ code {
 .layout {
   width:90vw;
   height:90vh;
+  padding: 50px;
+  text-align: justify;
+}
+
+.welcome-text {
+  margin-top: 1em;
 }

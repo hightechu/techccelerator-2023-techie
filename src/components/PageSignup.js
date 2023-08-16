@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { signUp } from "firebase_setup/firebase";
+import BackButtonWelcome from "./BackButtonWelcome";
+
 const PageSignup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -19,30 +21,35 @@ const PageSignup = () => {
     <> 
 
       <div className="container-fluid">
-        <h2>Sign Up</h2>
+        <BackButtonWelcome />
+        <h2 className="signupTitle">Sign Up</h2>
         {error ? <div>{error}</div> : null}
         <form onSubmit={handleSubmit}>
-          <input
-            type="email"
-            name="email"
-            value={email}
-            placeholder="Your Email"
-            required
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <input
-            type="password"
-            name="password"
-            value={password}
-            placeholder="Your Password"
-            required
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <button type="submit">Submit</button>
+          <div className="vstack gap-2 col-md-5 mx-auto">
+            <input
+              type="email"
+              name="email"
+              value={email}
+              placeholder="Your Email"
+              required
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <input
+              type="password"
+              name="password"
+              value={password}
+              placeholder="Your Password"
+              required
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <button type="submit">Sign Up</button>
+            </div>
         </form>
-        <p>
-          Already registered? <a href="/login">Login</a>
-        </p>
+        
+          <p className="signupTitle">
+            Already have an account? <a href="/login">Login</a>
+          </p>
+          
       </div>
 
     </>
