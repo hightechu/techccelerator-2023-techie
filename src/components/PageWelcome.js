@@ -5,14 +5,14 @@ const PageWelcome = () => {
   return (
     <div className="container-fluid">   
 
-       <h1 className="welcome-header">Welcome</h1>
+       <h1 className="text-center welcome-header">Welcome</h1>
 
-      <div className="welcome-button-container">
-        <a className="welcome-button login" href="/login">Log In</a>
-        <a className="welcome-button signup" href="/signup">Sign Up</a>
+      <div className="vstack gap-2 col-md-5 mx-auto welcome-button-container">
+        <a className="btn btn-secondary welcome-button login" href="/login">Log In</a>
+        <a className="btn btn-outline-secondary welcome-button signup" href="/signup">Sign Up</a>
       </div>
 
-        <p className="welcome-text">Want to learn more?<a href="/about">About Us</a></p>
+        <p className="text-center welcome-text">Want to learn more?<a href="/about">About Us</a></p>
 
     </div>
   );
