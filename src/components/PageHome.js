@@ -3,7 +3,7 @@ import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from 'firebase_setup/firebase';
 import { useNavigate } from 'react-router-dom';
  
-const UserHome = () => {
+const PageHome = () => {
 
     // Use this code (lines 9-18) on other pages that you only want authenticated users to see
     const currentUser = auth.currentUser;
@@ -37,4 +37,4 @@ const UserHome = () => {
     )
 }
  
-export default UserHome
+export default PageHome

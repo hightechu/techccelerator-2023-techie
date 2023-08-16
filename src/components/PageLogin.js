@@ -3,7 +3,7 @@ import { signIn } from "firebase_setup/firebase";
 import { useNavigate } from 'react-router-dom';
 
 // Login a user and redirect them to the user homepage
-const Login = () => {
+const PageLogin = () => {
 
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
@@ -52,4 +52,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default PageLogin;
