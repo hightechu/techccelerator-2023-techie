@@ -12,7 +12,7 @@ const PageWelcome = () => {
         <a className="btn btn-outline-secondary welcome-button signup" href="/signup">Sign Up</a>
       </div>
 
-        <p className="text-center welcome-text">Want to learn more?<a href="/about">About Us</a></p>
+        <p className="text-center welcome-text">Want to learn more? <a href="/about">About Us</a></p>
 
     </div>
   );
