@@ -43,3 +43,7 @@ code {
   padding: 50px;
   text-align: justify;
 }
+
+.welcome-text {
+  margin-top: 1em;
+}
