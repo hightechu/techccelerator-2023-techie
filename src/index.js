@@ -7,11 +7,11 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 
 // components imports
-import Login from "./components/PageLogin";
-import Signup from "./components/PageSignup";
-import UserHome from "./components/PageHome";
+import PageLogin from "./components/PageLogin";
+import PageSignup from "./components/PageSignup";
+import PageHome from "./components/PageHome";
 import Navigation from "./components/Navigation";
-import About from "./components/PageAbout";
+import PageAbout from "./components/PageAbout";
 import App from './App';
 import AddDataSample from './components/AddDataSample';
 

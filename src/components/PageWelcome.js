@@ -1,6 +1,6 @@
 import React from 'react';
 
- const PageWelcome = () => {
+const PageWelcome = () => {
 
   return (
     <div className="container-fluid">   
@@ -15,8 +15,8 @@ import React from 'react';
         <p className="welcome-text">Want to learn more?<a href="/about">About Us</a></p>
 
     </div>
-  )
+  );
 
-}
- 
-export default PageWelcome
+};
+
+export default PageWelcome;

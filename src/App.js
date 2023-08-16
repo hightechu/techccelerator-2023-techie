@@ -2,6 +2,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { auth } from 'firebase_setup/firebase';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
+import PageWelcome from "./components/PageWelcome";
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
   // HTML rendered here
   return (
     <div className="container-fluid">
-      <Welcome />
+      <PageWelcome />
     </div>
   );
 }

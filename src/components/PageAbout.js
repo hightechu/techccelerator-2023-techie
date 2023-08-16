@@ -13,6 +13,6 @@ import React from 'react';
     </div>
   )
 
-}
+};
  
-export default PageAbout
+export default PageAbout;
