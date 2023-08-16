@@ -41,7 +41,7 @@ const PageSignup = () => {
           <button type="submit">Submit</button>
         </form>
         <p>
-          Already registered? <a href="/login">Login</a>
+          Already have an account? <a href="/login">Login</a>
         </p>
       </div>
 

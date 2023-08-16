@@ -29,9 +29,45 @@ const PageHome = () => {
     return (
         <div className="container-fluid">        
             <h1>Welcome back, {currentUser.email}</h1>
-            <p>
-                This is your user homepage. This is a good place to put their main feed.
-            </p>
+            
+            <div className="cat-container">
+                <div className="card">
+                    <img src="..." className="card-img-top" alt="..." />
+                    <div className="card-body">
+                        <h5 className="card-title">Delivery</h5>
+                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="/home" className="btn btn-primary stretched-link">Delivery</a> 
+                    </div>
+                </div>
+
+                <div className="card">
+                    <img src="..." className="card-img-top" alt="..." />
+                    <div className="card-body">
+                        <h5 className="card-title">Nearby</h5>
+                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="/home" className="btn btn-primary stretched-link">Nearby</a> 
+                    </div>
+                </div>
+
+                <div className="card">
+                    <img src="..." className="card-img-top" alt="..." />
+                    <div className="card-body">
+                        <h5 className="card-title">Booking</h5>
+                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="/home" className="btn btn-primary stretched-link">Booking</a> 
+                    </div>
+                </div>
+
+                <div className="card">
+                    <img src="..." className="card-img-top" alt="..." />
+                    <div className="card-body">
+                        <h5 className="card-title">Contacts</h5>
+                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="/home" className="btn btn-primary stretched-link">Contacts</a> 
+                    </div>
+                </div>
+            </div>
+
             <button onClick={handleLogout}>Logout</button>
         </div>
     )
