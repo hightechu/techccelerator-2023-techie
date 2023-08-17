@@ -14,7 +14,6 @@ import PageAbout from "./components/PageAbout";
 import PageAccount from "./components/PageAccount";
 import App from './App';
 import AddDataSample from './components/AddDataSample';
-import Navigation from "./components/Navigation";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // Add routes after line 30

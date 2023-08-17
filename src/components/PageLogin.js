@@ -32,6 +32,7 @@ const PageLogin = () => {
               name="email"
               value={email}
               placeholder="Email"
+              required
               onChange={(e) => setEmail(e.target.value)}
             />
             <input
@@ -40,6 +41,7 @@ const PageLogin = () => {
               name="password"
               value={password}
               placeholder="Password"
+              required
               onChange={(e) => setPassword(e.target.value)}
             />
             <button type="submit" className="btn btn-secondary btn-lg">Log In</button>
