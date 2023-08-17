@@ -1,7 +1,10 @@
 import { Nav, Navbar, NavLink } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const Navigation = () => {
+const Navigation = (props) => {
+
+    console.log(props);
+
     return (
 
         <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
@@ -23,11 +26,11 @@ const Navigation = () => {
 
     );
 }
- 
-export default Navigation;
 
 /*
 
 
 
 */
+
+export default Navigation;

@@ -12,6 +12,10 @@ import PageSignup from "./components/PageSignup";
 import PageHome from "./components/PageHome";
 import PageAbout from "./components/PageAbout";
 import PageAccount from "./components/PageAccount";
+import PageDelivery from 'components/PageDelivery';
+import PageNearby from 'components/PageNearby';
+import PageBookings from 'components/PageBookings';
+import PageContact from 'components/PageContact';
 import App from './App';
 import AddDataSample from './components/AddDataSample';
 
@@ -28,6 +32,10 @@ root.render(
             <Route path='/about' element={<PageAbout/>}/>
             <Route path='/settings' element={<PageAccount/>}/>
             <Route path='/account' element={<PageAccount/>}/>
+            <Route path='/delivery' element={<PageDelivery/>}/>
+            <Route path='/nearby' element={<PageNearby/>}/>
+            <Route path='/bookings' element={<PageBookings/>}/>
+            <Route path='/contact' element={<PageContact/>}/>
             <Route path='/adddatasample' element={<AddDataSample/>}/>
         </Routes>
     </BrowserRouter>

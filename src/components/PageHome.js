@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from 'firebase_setup/firebase';
 import { useNavigate } from 'react-router-dom';
+import Navigation from "./Navigation";
  
 const PageHome = () => {
 
@@ -27,51 +28,57 @@ const PageHome = () => {
     }
  
     return (
-        <div className="container-fluid text-break">  
+        <div className="container-fluid text-break">
+
+            <Navigation topleft="logout" />   
             <h1>Welcome back, {currentUser.email}</h1>
             
             <div className="row row-cols-2">
                 <div className="col mt-5">
-                    <img src="..." className="card-img-top" alt="Delivery" />
                     <div className="card-body">
+                        <a href="/delivery" className="btn btn-outline-secondary">
+                            Delivery
+                        </a>
                         <h5 className="card-title">Delivery</h5>
                         <p className="card-text">Our Delivery Services include Groceries, Supplies, Takeout and Medication</p>
-                        <a href="/home" className="btn btn-secondary">Delivery</a> 
                     </div>
                 </div>
 
                 <div className="col mt-5">
-                    <img src="..." className="card-img-top" alt="Nearby" />
                     <div className="card-body">
+                        <a href="/nearby" className="btn btn-outline-secondary">
+                            Nearby
+                        </a>
                         <h5 className="card-title">Nearby</h5>
                         <p className="card-text">You can find Nearby Bus stops, medical, shopping, and rec centers </p>
-                        <a href="/home" className="btn btn-secondary">Nearby</a> 
                     </div>
                 </div>
 
                 <div className="col mt-5">
-                    <img src="..." className="card-img-top" alt="..." />
                     <div className="card-body">
-                        <h5 className="card-title">Booking</h5>
+                        <a href="/bookings" className="btn btn-outline-secondary">
+                            Bookings
+                        </a>
+                        <h5 className="card-title">Bookings</h5>
                         <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="/home" className="btn btn-secondary">Booking</a> 
                     </div>
                 </div>
 
                 <div className="col mt-5">
-                    <img src="..." className="card-img-top" alt="..." />
                     <div className="card-body">
-                        <h5 className="card-title">Contacts</h5>
+                        <a href="/contact" className="btn btn-outline-secondary">
+                            Contacts
+                        </a>
+                        <h5 className="card-title">Contact</h5>
                         <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="/home" className="btn btn-secondary">Contacts</a> 
                     </div>
+                </div>
+
             </div>
-
-        </div>
 
             <button onClick={handleLogout}>Logout</button>
         </div>
     )
 }
  
-export default PageHome
+export default PageHome;
