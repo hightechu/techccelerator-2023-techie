@@ -1,9 +1,11 @@
 import React from 'react';
+import Navigation from "./Navigation";
 
 const PageAccount = () => {
 
   return (
-    <div className="container-fluid">   
+    <div className="container-fluid">
+      <Navigation />
 
        <h1 className="">Settings / Account</h1>
 

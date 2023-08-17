@@ -1,8 +1,12 @@
 import { useState } from "react";
 import { signUp } from "firebase_setup/firebase";
+import { signIn } from "firebase_setup/firebase";
+import { useNavigate } from 'react-router-dom';
 import BackButtonWelcome from "./BackButtonWelcome";
 
 const PageSignup = () => {
+  
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, seterror] = useState("");
@@ -13,7 +17,10 @@ const PageSignup = () => {
       setEmail("");
       setPassword("");
       const res = await signUp(email, password);
-      if (res.error) seterror(res.error)
+      if (res.error) return seterror(res.error)
+      const res2 = await signIn(email, password);
+      if (res2.error) return seterror(res2.error)
+      navigate("/Account");
 
   };
 
