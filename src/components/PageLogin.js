@@ -15,9 +15,10 @@ const PageLogin = () => {
     setEmail("");
     setPassword("");
     const res = await signIn(email, password);
-    if (res.error) seterror(res.error);
+    if (res.error) return seterror(res.error);
     navigate("/Home");
   };
+
   return (
     <>
       <div className="container-fluid">
