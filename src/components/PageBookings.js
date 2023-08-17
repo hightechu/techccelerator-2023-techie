@@ -1,9 +1,11 @@
 import React from 'react';
+import Navigation from "./Navigation";
 
 const PageBookings = () => {
 
   return (
-    <div className="container-fluid">   
+    <div className="container-fluid">
+      <Navigation />
 
        <h1 className="text-center">Bookings</h1>
 

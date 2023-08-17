@@ -1,13 +1,14 @@
 import React from 'react';
+import Navigation from "./Navigation";
 
 const PageNearby = () => {
 
   return (
     <div className="container-fluid">   
 
-       <h1 className="text-center">Nearby</h1>
-    
+    <Navigation />
 
+       <h1 className="text-center">Nearby</h1>
 
     <div className="vstack gap-2 col-md-5 mx-auto">
       

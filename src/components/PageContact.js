@@ -1,9 +1,12 @@
 import React from 'react';
+import Navigation from "./Navigation";
 
 const PageContact = () => {
 
   return (
     <div className="container-fluid">   
+
+      <Navigation />
 
        <h1 className="text-center">Contacts</h1>
 
