@@ -9,7 +9,11 @@ const PageContact = () => {
 
         <div className="vstack gap-2 col-md-5 mx-auto">
 
-          <h2>1. Emergency Number</h2>
+        <div className="card text-bg-dark">
+          <img src="https://www.emergencyinfobc.gov.bc.ca/app/uploads/sites/5/2019/04/EmergencyInfoBC.png" class="card-img" alt="taxi" />
+          <h2 className="text-center">1. Emergency Number</h2>
+        </div>
+
             <div   className="card mb-3">
                 <div   className="row g-0">
                   <div   className="col-md-8">
