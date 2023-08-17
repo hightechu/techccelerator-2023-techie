@@ -28,10 +28,10 @@ code {
   font-size: x-large;
 }
 
-/*
-.material-symbols-outlined{
-  font-size: 1.5em;
-}*/
+
+a .material-symbols-outlined{
+  font-size: 4em;
+}
 
 /*
 .container {
