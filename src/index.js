@@ -11,7 +11,7 @@ import PageLogin from "./components/PageLogin";
 import PageSignup from "./components/PageSignup";
 import PageHome from "./components/PageHome";
 import PageAbout from "./components/PageAbout";
-import PageSettings from "./components/PageSettings";
+import PageAccount from "./components/PageAccount";
 import App from './App';
 import AddDataSample from './components/AddDataSample';
 import Navigation from "./components/Navigation";
@@ -27,6 +27,8 @@ root.render(
             <Route path='/login' element={<PageLogin/>}/>
             <Route path='/signup' element={<PageSignup/>}/>
             <Route path='/about' element={<PageAbout/>}/>
+            <Route path='/settings' element={<PageAccount/>}/>
+            <Route path='/account' element={<PageAccount/>}/>
             <Route path='/adddatasample' element={<AddDataSample/>}/>
         </Routes>
     </BrowserRouter>
