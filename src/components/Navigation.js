@@ -1,11 +1,58 @@
-import { Nav, Navbar, NavLink } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
+import { signOut } from "firebase/auth";
+import { auth } from 'firebase_setup/firebase';
 
 const Navigation = (props) => {
 
-    console.log(props);
+    const navigate = useNavigate();
+
+    function GoHome() {
+        navigate("/");
+    }
+
+    function GoToSettings() {
+        navigate("/account");
+    }
+    
+    const handleLogout = () => {               
+        signOut(auth).then(() => {
+            // Sign-out successful. Redirect to landing page
+            navigate("/");
+        }).catch((error) => {
+            // An error happened.
+        });
+    }
+
+    let topleft = (
+        <button className='btn btn-outline-secondary btn-lg pt-3 rounded-circle border-success text-success' onClick={GoHome}>
+            <span className="material-symbols-outlined">arrow_back</span>
+        </button>
+    );
+    if (props.topleft === "logout") {
+        topleft = (
+            <button className='btn btn-outline-secondary btn-lg pt-3 rounded-circle border-danger text-danger' onClick={handleLogout}>
+                <span className="material-symbols-outlined">logout</span>
+            </button>
+        );
+    }
 
     return (
+
+        <header className='d-flex justify-content-between'>
+            {topleft}
+            <button className='btn btn-lg pt-3' onClick={GoHome}>
+                <span className="">Logo.jpg</span>
+            </button>
+            <button className='btn btn-outline-secondary btn-lg pt-3 rounded-circle' onClick={GoToSettings}>
+                <span className="material-symbols-outlined">settings</span>
+            </button>
+
+        </header>
+
+    );
+}
+
+/*
 
         <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
             <Navbar.Toggle aria-controls="navbarScroll" data-bs-toggle="collapse" data-bs-target="#navbarScroll" />
@@ -23,13 +70,6 @@ const Navigation = (props) => {
                 </Nav>
             </Navbar.Collapse>     
         </Navbar>
-
-    );
-}
-
-/*
-
-
 
 */
 

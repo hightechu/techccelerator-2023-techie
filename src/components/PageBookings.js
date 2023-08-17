@@ -1,15 +1,18 @@
 import React from 'react';
+import Navigation from "./Navigation";
+import Footer from "./Footer";
 
 const PageBookings = () => {
 
   return (
-    <div className="container-fluid">   
+    <div className="container-fluid">
+      <Navigation />
 
-       <h1 className="text-center">Bookings</h1>
+       <h1 className="text-center mt-3">Bookings</h1>
 
   <div className="vstack gap-2 col-md-5 mx-auto">
 
-      <div className="card text-bg-dark">
+      <div className="card text-bg-dark mb-3">
         <img src="https://www.bpmcdn.com/f/files/oakbay/import/2023-01/31511288_web1_220107-VNE-YellowCabTaxiSaver-taxi_1.jpg" class="card-img" alt="taxi" />
         <h2 className="text-center">1. Taxi/Rideshare </h2>
       </div>
@@ -56,7 +59,7 @@ const PageBookings = () => {
 
         </div>
 
-    
+    <Footer page='bookings' />
   </div>
   );
 

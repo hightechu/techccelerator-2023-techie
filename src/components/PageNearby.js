@@ -1,17 +1,19 @@
 import React from 'react';
+import Navigation from "./Navigation";
+import Footer from "./Footer";
 
 const PageNearby = () => {
 
   return (
     <div className="container-fluid">   
 
-       <h1 className="text-center">Nearby</h1>
-    
+    <Navigation />
 
+       <h1 className="text-center mt-3">Nearby</h1>
 
     <div className="vstack gap-2 col-md-5 mx-auto">
       
-      <div className="card text-bg-dark">
+      <div className="card text-bg-dark mb-3">
         <img src="https://www.bpmcdn.com/f/files/saanich/import/2022-05/29024445_web1_220114-VNE-Transit-cancellations-bus_1.jpg" class="card-img" alt="bc transit" />
         <h2 className="text-center">1. Nearby Bus Routes</h2>
       </div>
@@ -73,6 +75,7 @@ const PageNearby = () => {
 
         </div>
 
+        <Footer page='nearby' />
     </div>
   );
 

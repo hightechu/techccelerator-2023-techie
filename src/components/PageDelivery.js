@@ -1,17 +1,19 @@
 import React from 'react';
+import Navigation from "./Navigation";
+import Footer from "./Footer";
 
 const PageDelivery = () => {
 
   return (
     <div className="container-fluid">   
 
-     
+    <Navigation />
       
-      <h1 className="text-center">Delivery</h1>
+      <h1 className="text-center mt-3">Delivery</h1>
 
     <div className="vstack gap-2 col-md-5 mx-auto">
 
-      <div className="card text-bg-dark">
+      <div className="card text-bg-dark mb-3">
         <img src="https://ecocart.io/wp-content/uploads/resized/2023/01/iStock-1371318211-1120x455-c-default.jpg" class="card-img" alt="stock grocery" />
         <h2 className="text-center">1. Groceries </h2>
       </div>
@@ -71,6 +73,7 @@ const PageDelivery = () => {
           </div>
 
         </div>
+     <Footer page='delivery' />
 
     </div>
   );

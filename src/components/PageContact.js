@@ -1,15 +1,19 @@
 import React from 'react';
+import Navigation from "./Navigation";
+import Footer from "./Footer";
 
 const PageContact = () => {
 
   return (
     <div className="container-fluid">   
 
-       <h1 className="text-center">Contacts</h1>
+      <Navigation />
+
+       <h1 className="text-center mt-3">Contacts</h1>
 
         <div className="vstack gap-2 col-md-5 mx-auto">
 
-        <div className="card text-bg-dark">
+        <div className="card text-bg-dark mb-3">
           <img src="https://www.emergencyinfobc.gov.bc.ca/app/uploads/sites/5/2019/04/EmergencyInfoBC.png" class="card-img" alt="taxi" />
           <h2 className="text-center">1. Emergency Number</h2>
         </div>
@@ -28,6 +32,7 @@ const PageContact = () => {
 
         </div>
 
+        <Footer page='contact' />
     </div>
   );
 

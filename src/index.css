@@ -28,24 +28,19 @@ code {
   font-size: x-large;
 }
 
-
 a .material-symbols-outlined{
   font-size: 4em;
 }
 
-/*
-.container {
-  background-color: #f1f1f1;
-  width: 100px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
+.vh-60{
+  height: 60vh;
 }
 
-.layout {
-  width:90vw;
-  height:90vh;
-  padding: 50px;
-  text-align: justify;
-}*/
+.vh-15{
+  width: 15vh;
+  height: 15vh;
+}
+
+.vh-10{
+  height: 10vh;
+}
