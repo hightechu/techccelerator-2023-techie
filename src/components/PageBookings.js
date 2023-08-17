@@ -8,70 +8,60 @@ const PageBookings = () => {
        <h1>Bookings</h1>
 
   <div className="vstack gap-2 col-md-5 mx-auto">
-
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="..." class="img-fluid rounded-start" alt="Groceries picture" />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Groceries</h5>
-              <p class="card-text">Get your Groceries from your favourite supermarket without leaving your home.</p>
-              <p class="card-text"><small class="text-body-secondary">Some restrictions Apply</small></p>
+      <h2>1. Taxi/Rideshare </h2>
+         <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="..." class="img-fluid rounded-start" alt="Blue Bird Cab" />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Blue Bird Cab</h5>
+                  <p class="card-text">Phone number: 250-XXX-XXXX</p>
+                  <p class="card-text"><small class="text-body-secondary">Call for availability</small></p>
+                  <button type="button" class="btn btn-secondary">Learn more.</button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="..." class="img-fluid rounded-start" alt="Takeout picture" />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Takeout</h5>
-              <p class="card-text">Get your next meal from your favourite restaurant without leaving your home.</p>
-              <p class="card-text"><small class="text-body-secondary">Some restrictions Apply.</small></p>
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="..." class="img-fluid rounded-start" alt="Yellow Cab" />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Yellow Cab</h5>
+                  <p class="card-text">Phone Number: 250-XXX-XXXX</p>
+                  <p class="card-text"><small class="text-body-secondary">Call for availability.</small></p>
+                  <button type="button" class="btn btn-secondary">Learn more</button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="..." class="img-fluid rounded-start" alt="Supplies picture" />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Supplies</h5>
-              <p class="card-text">Get your home items, hygiene products, stationary and more without leaving your home.</p>
-              <p class="card-text"><small class="text-body-secondary">Some restrictions Apply.</small></p>
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="..." class="img-fluid rounded-start" alt="Uber Rideshare" />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Uber</h5>
+                  <p class="card-text">Rideshare App</p>
+                  <p class="card-text"><small class="text-body-secondary">Some restrictions Apply.</small></p>
+                  <button type="button" class="btn btn-secondary">Learn more</button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="..." class="img-fluid rounded-start" alt="medication picture" />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Medication</h5>
-              <p class="card-text">Get your prescriptions, on-the-counter medications and more without leaving your home.</p>
-              <p class="card-text"><small class="text-body-secondary">Some restrictions Apply.</small></p>
-            </div>
-          </div>
-        </div>
-      </div>
 
+        </div>
+
+    
   </div>
-
-    </div>
   );
 
 };
