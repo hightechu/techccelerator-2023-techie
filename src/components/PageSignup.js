@@ -22,11 +22,12 @@ const PageSignup = () => {
 
       <div className="container-fluid">
         <BackButtonWelcome />
-        <h2 className="signupTitle">Sign Up</h2>
+        <h2 className="text-center mb-3 f-xxl">Sign Up</h2>
         {error ? <div>{error}</div> : null}
         <form onSubmit={handleSubmit}>
-          <div className="vstack gap-2 col-md-5 mx-auto">
+          <div className="vstack gap-3 col-md-5 mx-auto">
             <input
+              className="form-control form-control-lg"
               type="email"
               name="email"
               value={email}
@@ -35,6 +36,7 @@ const PageSignup = () => {
               onChange={(e) => setEmail(e.target.value)}
             />
             <input
+              className="form-control form-control-lg"
               type="password"
               name="password"
               value={password}
@@ -42,12 +44,12 @@ const PageSignup = () => {
               required
               onChange={(e) => setPassword(e.target.value)}
             />
-            <button type="submit">Sign Up</button>
+            <button type="submit" className="btn btn-secondary btn-lg">Sign Up</button>
             </div>
         </form>
         
-          <p className="signupTitle">
-            Already have an account? <a href="/login">Login</a>
+          <p className="text-center mt-3">
+            Already have an account? <a href="/login">Login!</a>
           </p>
           
       </div>

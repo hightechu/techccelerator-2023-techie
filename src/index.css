@@ -16,18 +16,24 @@ code {
 
 /* DEVELOPERS ADD CUSTOM CSS BELOW */
 
-.custom-class {
-  color: red;
+.f-xxxl{
+  font-size: 3em;
 }
 
-.aboutTitle {
-  font-size: 64px;
+.f-xxl{
+  font-size: xx-large;
 }
 
-.aboutTitle, .loginTitle, .signupTitle {
-  text-align: center;
+.f-xl{
+  font-size: x-large;
 }
 
+/*
+.material-symbols-outlined{
+  font-size: 1.5em;
+}*/
+
+/*
 .container {
   background-color: #f1f1f1;
   width: 100px;
@@ -42,8 +48,4 @@ code {
   height:90vh;
   padding: 50px;
   text-align: justify;
-}
-
-.welcome-text {
-  margin-top: 1em;
-}
+}*/
