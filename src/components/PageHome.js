@@ -31,46 +31,42 @@ const PageHome = () => {
         <div className="container-fluid text-break">
 
             <Navigation topleft="logout" />   
-            <h1>Welcome back, {currentUser.email}</h1>
+            <h1 className='mt-3 mb-3'>Welcome back, {currentUser.email}</h1>
             
             <div className="row row-cols-2">
                 <div className="col mt-5">
                     <div className="card-body">
                         <a href="/delivery" className="btn btn-outline-secondary">
-                            Delivery
+                            <span className="material-symbols-outlined">local_shipping</span>
+                            <h5 className="card-title" title="Get Groceries, Supplies, Takeout, and Medication">Delivery</h5>
                         </a>
-                        <h5 className="card-title">Delivery</h5>
-                        <p className="card-text">Our Delivery Services include Groceries, Supplies, Takeout and Medication</p>
                     </div>
                 </div>
 
                 <div className="col mt-5">
                     <div className="card-body">
                         <a href="/nearby" className="btn btn-outline-secondary">
-                            Nearby
+                            <span className="material-symbols-outlined">explore</span>
+                            <h5 className="card-title" title="Find Nearby Bus Stops, Medical, Shopping, and Recreation">Nearby</h5>
                         </a>
-                        <h5 className="card-title">Nearby</h5>
-                        <p className="card-text">You can find Nearby Bus stops, medical, shopping, and rec centers </p>
                     </div>
                 </div>
 
                 <div className="col mt-5">
                     <div className="card-body">
                         <a href="/bookings" className="btn btn-outline-secondary">
-                            Bookings
+                            <span className="material-symbols-outlined">book_online</span>
+                            <h5 className="card-title" title="">Bookings</h5>
                         </a>
-                        <h5 className="card-title">Bookings</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
 
                 <div className="col mt-5">
                     <div className="card-body">
                         <a href="/contact" className="btn btn-outline-secondary">
-                            Contacts
+                            <span className="material-symbols-outlined">contacts</span>
+                            <h5 className="card-title" title="">Contact</h5>
                         </a>
-                        <h5 className="card-title">Contact</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
 
