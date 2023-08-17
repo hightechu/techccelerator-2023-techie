@@ -1,11 +1,10 @@
 import React from 'react';
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
-import { auth } from "firebase_setup/firebase";
 import BackButtonWelcome from "./BackButtonWelcome";
 
 const PageAccount = () => {
-  const currentUser = auth.currentUser;
+  
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [fname, setFirstName] = useState("");
@@ -27,8 +26,10 @@ const PageAccount = () => {
     setCity("");
     setProvince("");
     setCountry("");
-  navigate("/Home");
+    if (!fname || !lname || !address || !number || !city || !province || !country) return seterror("Please fill out your account details");
+    navigate("/Home");
   };
+
   return (
     <>
       <div className="container-fluid">
@@ -59,8 +60,9 @@ const PageAccount = () => {
               className="form-control form-control-lg"
               type="text"
               name="email"
-              value={currentUser.email}
+              value={email}
               required
+              disabled
               onChange={(e) => setEmail(e.target.value)}
             />
             <input
@@ -108,7 +110,7 @@ const PageAccount = () => {
               required
               onChange={(e) => setCountry(e.target.value)}
             />
-            <button type="submit" className="btn btn-secondary btn-lg">Log In</button>
+            <button type="submit" className="btn btn-secondary btn-lg">Save</button>
           </div>
         </form>
         <p className="text-center mt-3">
