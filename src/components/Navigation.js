@@ -1,5 +1,3 @@
-//import { Nav, Navbar, NavLink } from "react-bootstrap";
-//import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import { signOut } from "firebase/auth";
 import { auth } from 'firebase_setup/firebase';
@@ -26,7 +24,7 @@ const Navigation = (props) => {
     }
 
     let topleft = (
-        <button className='btn btn-outline-secondary btn-lg pt-3 rounded-circle border-info text-info' onClick={GoHome}>
+        <button className='btn btn-outline-secondary btn-lg pt-3 rounded-circle border-success text-success' onClick={GoHome}>
             <span className="material-symbols-outlined">arrow_back</span>
         </button>
     );
