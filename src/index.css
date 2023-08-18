@@ -45,6 +45,10 @@ a div .material-symbols-outlined{
   height: 15vh;
 }
 
+.navbox{
+  height: 6vh;
+}
+
 .vh-12{
   height: 12vh;
 }
@@ -87,4 +91,8 @@ a div .material-symbols-outlined{
   color: white;
   background-color: #fd7e14;
   border: none;
+}
+
+svg{
+  overflow: hidden;
 }

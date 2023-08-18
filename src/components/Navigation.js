@@ -40,8 +40,10 @@ const Navigation = (props) => {
 
         <header className='d-flex justify-content-between'>
             {topleft}
-            <button className='btn btn-lg pt-3' onClick={GoHome}>
-                <img className="" alt="Logo" src="" />
+            <button className='btn' onClick={GoHome}>
+                <svg viewBox='25 25 75 75' className='navbox'>
+                    <use href='#logo' height='100' x="-60" y="10" />
+                </svg>
             </button>
             <button className='btn btn-outline-secondary btn-lg pt-3 rounded-circle' onClick={GoToSettings}>
                 <span className="material-symbols-outlined">settings</span>

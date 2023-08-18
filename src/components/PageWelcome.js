@@ -5,8 +5,10 @@ const PageWelcome = () => {
   return (
     <div className="container-fluid">   
 
-      <img className="" alt="Logo" src="" />
-      <h1 className="text-center f-xxxl mb-3">Welcome</h1>
+      <svg viewBox='0 0 100 100' className='homebox'>
+        <use href='#logo' height='100' x="-75" y="0" />
+      </svg>
+      <h1 className="text-center f-xxxl mt-5 mb-3">Welcome</h1>
 
       <div className="vstack gap-3 col-md-5 mx-auto">
         <a className="btn btn-lg btn-secondary welcome-button login" href="/login">Log In</a>
