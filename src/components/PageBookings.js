@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigation from "./Navigation";
-import Footer from "./Footer";
+import BottomNav from './BottomNav';
 
 const PageBookings = () => {
 
@@ -59,7 +59,7 @@ const PageBookings = () => {
 
       </div>
 
-      <Footer page='bookings' />
+      <BottomNav page='bookings' />
     </div>
   );
 

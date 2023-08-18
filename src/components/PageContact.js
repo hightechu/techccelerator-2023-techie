@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigation from "./Navigation";
-import Footer from "./Footer";
+import BottomNav from './BottomNav';
 
 const PageContact = () => {
 
@@ -9,7 +9,7 @@ const PageContact = () => {
 
       <Navigation />
 
-      <h1 className="text-center mt-3">Contacts</h1>
+      <h1 className="text-center mt-3">Contact</h1>
 
       <div className="vstack gap-2 col-md-5 mx-auto">
 
@@ -32,7 +32,7 @@ const PageContact = () => {
 
       </div>
 
-      <Footer page='contact' />
+      <BottomNav page='contact' />
     </div>
   );
 

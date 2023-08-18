@@ -32,7 +32,7 @@ a .material-symbols-outlined{
   font-size: 4em;
 }
 
-a span .material-symbols-outlined{
+a div .material-symbols-outlined{
   font-size: 1em;
 }
 
@@ -40,31 +40,51 @@ a span .material-symbols-outlined{
   height: 60vh;
 }
 
-.vh-15{
+.homebox{
   width: 15vh;
-  height: 20vh;
+  height: 15vh;
 }
 
-.vh-10{
-  height: 10vh;
+.vh-12{
+  height: 12vh;
 }
 
 .nice-green{
   color: #2ba745;
   border-color: #2ba745;
 }
+.nice-green:hover{
+  color: white;
+  background-color: #2ba745;
+  border: none;
+}
 
 .nice-pink{
   color: #e83e8c;
   border-color: #e83e8c;
+}
+.nice-pink:hover{
+  color: white;
+  background-color: #e83e8c;
+  border: none;
 }
 
 .nice-cyan{
   color: #17a2b8;
   border-color: #17a2b8;
 }
+.nice-cyan:hover{
+  color: white;
+  background-color: #17a2b8;
+  border: none;
+}
 
 .nice-orange{
   color: #fd7e14;
   border-color: #fd7e14;
+}
+.nice-orange:hover{
+  color: white;
+  background-color: #fd7e14;
+  border: none;
 }
