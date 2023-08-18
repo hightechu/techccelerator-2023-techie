@@ -54,7 +54,7 @@ const PageHome = () => {
                     <a href="/bookings" className="btn btn-outline-secondary m-2 homebox nice-cyan">
                         <span className="material-symbols-outlined">book_online</span>
                         <h5 className="card-title" title="">Bookings</h5>
-                        <div>Book Taxis, 
+                        <div>Book Taxis, Restaurants, Appointments, or Flights
                             <span className='material-symbols-outlined'></span>
                             <span className='material-symbols-outlined'></span>
                             <span className='material-symbols-outlined'></span>
@@ -64,7 +64,7 @@ const PageHome = () => {
                     <a href="/contact" className="btn btn-outline-secondary m-2 homebox nice-orange">
                         <span className="material-symbols-outlined">contacts</span>
                         <h5 className="card-title" title="">Contact</h5>
-                        <div>
+                        <div>Contact Emergencies, Non-Emergencies, Home Services, and Techie App Team
                             <span className='material-symbols-outlined'></span>
                             <span className='material-symbols-outlined'></span>
                             <span className='material-symbols-outlined'></span>
