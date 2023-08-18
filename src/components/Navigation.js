@@ -24,13 +24,13 @@ const Navigation = (props) => {
     }
 
     let topleft = (
-        <button className='btn btn-outline-secondary btn-lg pt-3 rounded-circle border-primary text-primary' onClick={GoHome}>
+        <button className='btn btn-outline-primary btn-lg pt-3 rounded-circle' onClick={GoHome}>
             <span className="material-symbols-outlined">arrow_back</span>
         </button>
     );
     if (props.topleft === "logout") {
         topleft = (
-            <button className='btn btn-outline-secondary btn-lg pt-3 rounded-circle border-danger text-danger' onClick={handleLogout}>
+            <button className='btn btn-outline-danger btn-lg pt-3 rounded-circle' onClick={handleLogout}>
                 <span className="material-symbols-outlined">logout</span>
             </button>
         );

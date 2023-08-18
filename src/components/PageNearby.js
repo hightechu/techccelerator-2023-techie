@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigation from "./Navigation";
-import Footer from "./Footer";
+import BottomNav from './BottomNav';
 
 const PageNearby = () => {
 
@@ -70,10 +70,10 @@ const PageNearby = () => {
                 </div>
             </div>
         </div>
-        
+
       </div>
 
-      <Footer page='nearby' />
+      <BottomNav page='nearby' />
     </div>
   );
 

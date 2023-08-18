@@ -27,29 +27,49 @@ const PageHome = () => {
             <div className='d-flex flex-column vh-60 justify-content-center'>
                 <div className="d-flex flex-row justify-content-center">
                     
-                    <a href="/delivery" className="btn btn-outline-secondary m-2 vh-15 nice-green">
+                    <a href="/delivery" className="btn btn-outline-secondary m-2 homebox nice-green">
                         <span className="material-symbols-outlined">local_shipping</span>
                         <h5 className="card-title">Delivery</h5>
-                        <p>Get Groceries, Supplies, Takeout, or Medication</p>
+                        <div>Get Groceries, Supplies, Takeout, or Medication
+                            <span className='material-symbols-outlined'></span>
+                            <span className='material-symbols-outlined'></span>
+                            <span className='material-symbols-outlined'></span>
+                            <span className='material-symbols-outlined'></span>
+                        </div>
                     </a>
-                    <a href="/nearby" className="btn btn-outline-secondary m-2 vh-15 nice-pink">
+                    <a href="/nearby" className="btn btn-outline-secondary m-2 homebox nice-pink">
                         <span className="material-symbols-outlined">explore</span>
                         <h5 className="card-title">Nearby</h5>
-                        <p>Find Buses, Medical, Shopping, or Recreation</p>
+                        <div>Find Buses, Medical, Shopping, or Recreation
+                            <span className='material-symbols-outlined'></span>
+                            <span className='material-symbols-outlined'></span>
+                            <span className='material-symbols-outlined'></span>
+                            <span className='material-symbols-outlined'></span>
+                        </div>
                     </a>
                     
                 </div>
                 <div className='d-flex flex-row justify-content-center'>
                     
-                    <a href="/bookings" className="btn btn-outline-secondary m-2 vh-15 nice-cyan">
+                    <a href="/bookings" className="btn btn-outline-secondary m-2 homebox nice-cyan">
                         <span className="material-symbols-outlined">book_online</span>
                         <h5 className="card-title" title="">Bookings</h5>
-                        <p>Book Taxis, </p>
+                        <div>Book Taxis, 
+                            <span className='material-symbols-outlined'></span>
+                            <span className='material-symbols-outlined'></span>
+                            <span className='material-symbols-outlined'></span>
+                            <span className='material-symbols-outlined'></span>
+                        </div>
                     </a>
-                    <a href="/contact" className="btn btn-outline-secondary m-2 vh-15 nice-orange">
+                    <a href="/contact" className="btn btn-outline-secondary m-2 homebox nice-orange">
                         <span className="material-symbols-outlined">contacts</span>
                         <h5 className="card-title" title="">Contact</h5>
-                        <p></p>
+                        <div>
+                            <span className='material-symbols-outlined'></span>
+                            <span className='material-symbols-outlined'></span>
+                            <span className='material-symbols-outlined'></span>
+                            <span className='material-symbols-outlined'></span>
+                        </div>
                     </a>
 
                 </div>
