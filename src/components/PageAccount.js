@@ -108,12 +108,9 @@ const PageAccount = () => {
               required
               onChange={(e) => setCountry(e.target.value)}
             />
-            <button type="submit" className="btn btn-secondary btn-lg">Save</button>
+            <button type="submit" className="btn btn-primary btn-lg">Save</button>
           </div>
         </form>
-        <p className="text-center mt-3">
-          New? <a href="/signup">Sign up here!</a>
-        </p>
         
       </div>
       
