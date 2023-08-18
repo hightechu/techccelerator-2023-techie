@@ -27,25 +27,29 @@ const PageHome = () => {
             <div className='d-flex flex-column vh-60 justify-content-center'>
                 <div className="d-flex flex-row justify-content-center">
                     
-                    <a href="/delivery" className="btn btn-outline-secondary m-2 vh-15">
+                    <a href="/delivery" className="btn btn-outline-secondary m-2 vh-15 nice-green">
                         <span className="material-symbols-outlined">local_shipping</span>
-                        <h5 className="card-title" title="Get Groceries, Supplies, Takeout, and Medication">Delivery</h5>
+                        <h5 className="card-title">Delivery</h5>
+                        <p>Get Groceries, Supplies, Takeout, or Medication</p>
                     </a>
-                    <a href="/nearby" className="btn btn-outline-secondary m-2 vh-15">
+                    <a href="/nearby" className="btn btn-outline-secondary m-2 vh-15 nice-pink">
                         <span className="material-symbols-outlined">explore</span>
-                        <h5 className="card-title" title="Find Nearby Bus Stops, Medical, Shopping, and Recreation">Nearby</h5>
+                        <h5 className="card-title">Nearby</h5>
+                        <p>Find Buses, Medical, Shopping, or Recreation</p>
                     </a>
                     
                 </div>
                 <div className='d-flex flex-row justify-content-center'>
                     
-                    <a href="/bookings" className="btn btn-outline-secondary m-2 vh-15">
+                    <a href="/bookings" className="btn btn-outline-secondary m-2 vh-15 nice-cyan">
                         <span className="material-symbols-outlined">book_online</span>
                         <h5 className="card-title" title="">Bookings</h5>
+                        <p>Book Taxis, </p>
                     </a>
-                    <a href="/contact" className="btn btn-outline-secondary m-2 vh-15">
+                    <a href="/contact" className="btn btn-outline-secondary m-2 vh-15 nice-orange">
                         <span className="material-symbols-outlined">contacts</span>
                         <h5 className="card-title" title="">Contact</h5>
+                        <p></p>
                     </a>
 
                 </div>

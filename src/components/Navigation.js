@@ -24,7 +24,7 @@ const Navigation = (props) => {
     }
 
     let topleft = (
-        <button className='btn btn-outline-secondary btn-lg pt-3 rounded-circle border-success text-success' onClick={GoHome}>
+        <button className='btn btn-outline-secondary btn-lg pt-3 rounded-circle border-primary text-primary' onClick={GoHome}>
             <span className="material-symbols-outlined">arrow_back</span>
         </button>
     );
@@ -41,7 +41,7 @@ const Navigation = (props) => {
         <header className='d-flex justify-content-between'>
             {topleft}
             <button className='btn btn-lg pt-3' onClick={GoHome}>
-                <span className="">Logo.jpg</span>
+                <img className="" alt="Logo" src="" />
             </button>
             <button className='btn btn-outline-secondary btn-lg pt-3 rounded-circle' onClick={GoToSettings}>
                 <span className="material-symbols-outlined">settings</span>

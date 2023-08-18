@@ -32,15 +32,39 @@ a .material-symbols-outlined{
   font-size: 4em;
 }
 
+a span .material-symbols-outlined{
+  font-size: 1em;
+}
+
 .vh-60{
   height: 60vh;
 }
 
 .vh-15{
   width: 15vh;
-  height: 15vh;
+  height: 20vh;
 }
 
 .vh-10{
   height: 10vh;
+}
+
+.nice-green{
+  color: #2ba745;
+  border-color: #2ba745;
+}
+
+.nice-pink{
+  color: #e83e8c;
+  border-color: #e83e8c;
+}
+
+.nice-cyan{
+  color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.nice-orange{
+  color: #fd7e14;
+  border-color: #fd7e14;
 }

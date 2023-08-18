@@ -5,7 +5,7 @@ const PageWelcome = () => {
   return (
     <div className="container-fluid">   
 
-      <h1>Logo.jpg</h1>
+      <img className="" alt="Logo" src="" />
       <h1 className="text-center f-xxxl mb-3">Welcome</h1>
 
       <div className="vstack gap-3 col-md-5 mx-auto">
