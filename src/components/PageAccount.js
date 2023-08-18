@@ -2,11 +2,11 @@ import React from 'react';
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import BackButtonWelcome from "./BackButtonWelcome";
+import { auth } from "firebase_setup/firebase";
 
 const PageAccount = () => {
-  
+  const currentUser = auth.currentUser;
   const navigate = useNavigate();
-  const [email, setEmail] = useState("");
   const [fname, setFirstName] = useState("");
   const [lname, setLastName] = useState("");
   const [address, setAddress] = useState("");
@@ -18,7 +18,6 @@ const PageAccount = () => {
 
   const save = async (e) => {
     e.preventDefault();
-    setEmail("");
     setFirstName("");
     setLastName("");
     setAddress("");
@@ -60,10 +59,9 @@ const PageAccount = () => {
               className="form-control form-control-lg"
               type="text"
               name="email"
-              value={email}
+              value={currentUser.email}
+              placeholder={currentUser.email}
               required
-              disabled
-              onChange={(e) => setEmail(e.target.value)}
             />
             <input
               className="form-control form-control-lg"
