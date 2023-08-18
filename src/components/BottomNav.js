@@ -3,6 +3,12 @@ import PageDeliveryGroceries from "./PageDeliveryGroceries";
 import PageDeliveryTakeout from "./PageDeliveryTakeout";
 import PageDeliverySupplies from "./PageDeliverySupplies";
 import PageDeliveryMedication from "./PageDeliveryMedication";
+import PageNearbyBuses from "./PageNearbyBuses";
+/*
+import PageNearbyRecreation from "./PageNearbyRecreation";
+import PageNearbyShopping from "./PageNearbyShopping";
+import PageNearbyMedical from "./PageNearbyMedical";
+*/
 
 const BottomNav = ({page, updateSubpageContent}) => {
 
@@ -12,6 +18,12 @@ const BottomNav = ({page, updateSubpageContent}) => {
             case "Takeout": return updateSubpageContent(<PageDeliveryTakeout />);
             case "Supplies": return updateSubpageContent(<PageDeliverySupplies />);
             case "Medication": return updateSubpageContent(<PageDeliveryMedication />);
+            case "Buses": return updateSubpageContent(<PageNearbyBuses />);
+            /*
+            case "Recreation": return updateSubpageContent(<PageNearbyRecreation />);
+            case "Shopping": return updateSubpageContent(<PageNearbyShopping />);
+            case "Medical": return updateSubpageContent(<PageNearbyMedical />);
+            */
             default: return;
         }
     }
@@ -45,16 +57,16 @@ const BottomNav = ({page, updateSubpageContent}) => {
         },
         icon: {
             delivery: [
-                "",
-                "",
-                "",
-                ""
+                "shopping_cart",
+                "takeout_dining",
+                "handyman",
+                "prescriptions"
             ],
             nearby: [
-                "",
-                "",
-                "",
-                ""
+                "directions_bus",
+                "sports_tennis",
+                "shopping_bag",
+                "medical_services"
             ],
             bookings: [
                 "",
