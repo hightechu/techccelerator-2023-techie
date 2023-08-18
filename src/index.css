@@ -16,34 +16,83 @@ code {
 
 /* DEVELOPERS ADD CUSTOM CSS BELOW */
 
-.custom-class {
-  color: red;
+.f-xxxl{
+  font-size: 3em;
 }
 
-.aboutTitle {
-  font-size: 64px;
+.f-xxl{
+  font-size: xx-large;
 }
 
-.aboutTitle, .loginTitle, .signupTitle {
-  text-align: center;
+.f-xl{
+  font-size: x-large;
 }
 
-.container {
-  background-color: #f1f1f1;
-  width: 100px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
+a .material-symbols-outlined{
+  font-size: 4em;
 }
 
-.layout {
-  width:90vw;
-  height:90vh;
-  padding: 50px;
-  text-align: justify;
+a div .material-symbols-outlined{
+  font-size: 1em;
 }
 
-.welcome-text {
-  margin-top: 1em;
+.vh-60{
+  height: 60vh;
+}
+
+.homebox{
+  width: 25vh;
+  height: 27vh;
+}
+
+.navbox{
+  height: 6vh;
+}
+
+.vh-12{
+  height: 12vh;
+}
+
+.nice-green{
+  color: #2ba745;
+  border-color: #2ba745;
+}
+.nice-green:hover{
+  color: white;
+  background-color: #2ba745;
+  border: none;
+}
+
+.nice-pink{
+  color: #e83e8c;
+  border-color: #e83e8c;
+}
+.nice-pink:hover{
+  color: white;
+  background-color: #e83e8c;
+  border: none;
+}
+
+.nice-cyan{
+  color: #17a2b8;
+  border-color: #17a2b8;
+}
+.nice-cyan:hover{
+  color: white;
+  background-color: #17a2b8;
+  border: none;
+}
+
+.nice-orange{
+  color: #fd7e14;
+  border-color: #fd7e14;
+}
+.nice-orange:hover{
+  color: white;
+  background-color: #fd7e14;
+  border: none;
+}
+
+svg{
+  overflow: hidden;
 }

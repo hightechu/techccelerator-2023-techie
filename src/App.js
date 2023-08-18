@@ -18,7 +18,7 @@ function App() {
  
   // HTML rendered here
   return (
-    <div className="container-fluid">
+    <div className="container-fluid vh-100">
       <PageWelcome />
     </div>
   );

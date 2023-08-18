@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
-import { onAuthStateChanged, signOut } from "firebase/auth";
+import { onAuthStateChanged } from "firebase/auth";
 import { auth } from 'firebase_setup/firebase';
 import { useNavigate } from 'react-router-dom';
+import Navigation from "./Navigation";
  
 const PageHome = () => {
 
@@ -16,61 +17,68 @@ const PageHome = () => {
             }
           });    
     }, [navigate])
-
-    const handleLogout = () => {               
-        signOut(auth).then(() => {
-            // Sign-out successful. Redirect to landing page
-            navigate("/");
-        }).catch((error) => {
-            // An error happened.
-        });
-    }
  
     return (
-        <div className="container-fluid">        
-            <h1>Welcome back, {currentUser.email}</h1>
+        <div className="container-fluid text-break">
+
+            <Navigation topleft="logout" className="mb-3"/>   
+            <h1 className='mt-3 mb-3'>Welcome back, {currentUser.email}</h1>
             
-            <div className="cat-container vstack gap-2 col-md-5 mx-auto">
-                <div className="card">
-                    <img src="https://www.thesprucepets.com/thmb/IpbkgVRbcb1xVONujX_gzk4VV8s=/2121x0/filters:no_upscale():strip_icc()/GettyImages-481523341-acc726247c9e4f5abef6f4bd13559691.jpg" className="card-img-top" alt="Delivery" />
-                    <div className="card-body">
+            <div className='d-flex flex-column vh-60 justify-content-center'>
+                <div className="d-flex flex-row justify-content-center">
+                    
+                    <a href="/delivery" className="btn btn-outline-secondary m-2 homebox nice-green">
+                        <span className="material-symbols-outlined">local_shipping</span>
                         <h5 className="card-title">Delivery</h5>
-                        <p className="card-text">Our Delivery Services include Groceries, Supplies, Takeout and Medication</p>
-                        <a href="/home" className="btn btn-secondary">Delivery</a> 
-                    </div>
-                </div>
-
-                <div className="card">
-                    <img src="https://images.theconversation.com/files/456350/original/file-20220405-6157-c2dbrq.jpeg?ixlib=rb-1.1.0&rect=20%2C287%2C2287%2C1142&q=45&auto=format&w=1356&h=668&fit=crop" className="card-img-top" alt="Nearby" />
-                    <div className="card-body">
+                        <div>Get Groceries, Supplies, Takeout, or Medication
+                            <span className='material-symbols-outlined'></span>
+                            <span className='material-symbols-outlined'></span>
+                            <span className='material-symbols-outlined'></span>
+                            <span className='material-symbols-outlined'></span>
+                        </div>
+                    </a>
+                    <a href="/nearby" className="btn btn-outline-secondary m-2 homebox nice-pink">
+                        <span className="material-symbols-outlined">explore</span>
                         <h5 className="card-title">Nearby</h5>
-                        <p className="card-text">You can find Nearby Bus stops, medical, shopping, and rec centers </p>
-                        <a href="/home" className="btn btn-secondary">Nearby</a> 
-                    </div>
+                        <div>Find Buses, Medical, Shopping, or Recreation
+                            <span className='material-symbols-outlined'></span>
+                            <span className='material-symbols-outlined'></span>
+                            <span className='material-symbols-outlined'></span>
+                            <span className='material-symbols-outlined'></span>
+                        </div>
+                    </a>
+                    
                 </div>
+                <div className='d-flex flex-row justify-content-center'>
+                    
+                    <a href="/bookings" className="btn btn-outline-secondary m-2 homebox nice-cyan">
+                        <span className="material-symbols-outlined">book_online</span>
+                        <h5 className="card-title" title="">Bookings</h5>
+                        <div>Book Taxis, Restaurants, Appointments, or Flights
+                            <span className='material-symbols-outlined'></span>
+                            <span className='material-symbols-outlined'></span>
+                            <span className='material-symbols-outlined'></span>
+                            <span className='material-symbols-outlined'></span>
+                        </div>
+                    </a>
+                    <a href="/contact" className="btn btn-outline-secondary m-2 homebox nice-orange">
+                        <span className="material-symbols-outlined">contacts</span>
+                        <h5 className="card-title" title="">Contact</h5>
+                        <div>Contact Emergencies, Non-Emergencies, Home Services, and Techie App Team
+                            <span className='material-symbols-outlined'></span>
+                            <span className='material-symbols-outlined'></span>
+                            <span className='material-symbols-outlined'></span>
+                            <span className='material-symbols-outlined'></span>
+                        </div>
+                    </a>
 
-                <div className="card">
-                    <img src="..." className="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <h5 className="card-title">Booking</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="/home" className="btn btn-secondary">Booking</a> 
-                    </div>
-                </div>
-
-                <div className="card">
-                    <img src="..." className="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <h5 className="card-title">Contacts</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="/home" className="btn btn-secondary">Contacts</a> 
-                    </div>
                 </div>
             </div>
 
-            <button onClick={handleLogout}>Logout</button>
         </div>
     )
 }
- 
-export default PageHome
+
+// row row-cols-2 mt-5
+
+export default PageHome;

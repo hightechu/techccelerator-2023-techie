@@ -9,7 +9,7 @@ const BackButtonWelcome = () => {
     }
 
     return (
-        <button className='back-btn-welcome' onClick={GoToWelcome}>
+        <button className='btn btn-outline-secondary btn-lg pt-3 rounded-circle' onClick={GoToWelcome}>
             <span className="material-symbols-outlined">arrow_back</span>
         </button>
     );
