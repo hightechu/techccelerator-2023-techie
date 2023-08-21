@@ -9,6 +9,8 @@ Techie is your all-in-one platform for lifestyle success. Designed for seniors a
 
 Ready to check it out? [View the prototype here](https://htu3-82bf9.web.app/) or [learn more about Techie here.](https://docs.google.com/presentation/d/1AYVuia7iUGalavz0n8guy8hiZBT2ZKQswDNlFUMLydo/edit#slide=id.g25171066b3f_0_0)
 
+_Techie is the winner of the Startup Potential award_
+
 ## Technologies
 
 The HighTechU Techccelerator web app uses the following technologies: Node.js, React.js, Firebase, and Bootstrap.
